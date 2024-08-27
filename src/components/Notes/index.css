@@ -1,0 +1,184 @@
+.notes-item{
+    width: 190px;
+    border-radius: 5px;
+    padding: 10px;
+    height: 280px;
+    background-color: burlywood;
+    background-size: cover;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-options-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 80px;
+    max-height: auto;
+}
+
+.options-icon{
+    margin-left: 5px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.options-popup{
+    position: absolute;
+    margin-left: 45px;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    height: 100px;
+    width: 120px;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.color-input{
+    height: 20px;
+    width: 90px;
+    margin: 5px;
+}
+
+.personalization{
+    height: 25px;
+    width: 60px;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+.description{
+    color: #000000;
+    text-align: start;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    width: 100px;
+    font-size: 18px;
+}
+
+.date-time-container {
+    background-color: transparent;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: flex-end;
+    justify-content: end;
+}
+
+.date-info {
+    color: #f3f6f8;
+    font-weight: bold;
+    font-size: 10px;
+    margin: 0;
+}
+
+.time-date {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.notes-title{
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.personalization-popup{
+    position: absolute;
+    margin-left: 45px;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    height: 130px;
+    width: 120px;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px;
+}
+
+label{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .notes-item{
+        width: 100px;
+        height: 140px;
+    }
+
+    .title-options-container{
+        min-height: 15px;
+        max-height: auto;
+    }
+
+    .notes-title{
+        font-size: 13px;
+        
+    }
+
+    .options-popup{
+        position: fixed;
+        margin-left:    15px;
+        height: 60px;
+        width: 68px;
+        border-radius: 5px;
+        font-size: 7px;
+        padding: 3px;
+        font-weight: bold;
+    }
+
+    .personalization-popup{
+        position: absolute;
+        margin-left: 10px;
+        height: 73px;
+        width: 73px;
+        border-radius: 5px;
+        font-size: 8px;
+        padding: 3px;
+    }
+
+    .color-input{
+        height: 10px;
+        width: 40px;
+        margin: 2px;
+    }
+
+    label{
+        font-size: 6x;
+    }
+
+    .personalization{
+        height: 18px;
+        width: 30px;
+        font-size: 10px;
+        margin-left: 5px;
+        margin-top: 3px;
+    }
+
+    .description{
+        font-size: 9px;
+    }
+
+    .date-info {
+        font-size: 6px;
+        
+    }
+
+    .date-time-container {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+    }
+
+    .time-date {
+        font-size: 6px;
+    }
+}
